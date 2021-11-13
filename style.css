@@ -1,0 +1,113 @@
+@font-face {
+    font-family:'Pitchsans-Semibold';
+    src: url('./fonts/PitchSans-Semibold.ttf');
+}
+@font-face {
+    font-family: 'Superior Title Black Regular';
+    src: url('./fonts/Superior Title Black Regular.ttf')
+}
+@font-face {
+    font-family: 'GT Walsheim Pro Bold Regular';
+    src: url('./fonts/GT Walsheim Pro Bold Regular.ttf')
+}
+@font-face {
+    font-family: 'GTWalsheimPro-Light';
+    src: url('./fonts/GTWalsheimPro-Light.ttf')
+}
+
+
+body  {
+    background: rgb(0,204,202);
+    background: linear-gradient(90deg, rgba(0,204,202,1) 19%, rgba(0,255,244,1) 35%, rgba(0,245,247,1) 68%);
+}
+
+div#wrapper {
+    height: 98vh;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+#title {
+    background-color: #08F7A7;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#title h1 {
+    font-family: 'Pitchsans-Semibold';
+    font-size: 38px;
+    
+}
+
+#wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+
+div.pChoices {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.pChoices img {
+    height: 190px;
+    width: auto;
+}
+
+.pChoices img:hover  {
+    transform: scale(1.2);
+    transform-origin: center
+}
+
+
+#wrapper3 {
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+}
+
+.results p {
+    font-size: 35px;
+    font-family: 'Pitchsans-Semibold';
+}
+
+div.results {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px
+}
+
+div.winner {
+    font-size: 65px;
+    font-family: 'GT Walsheim Pro Bold Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    letter-spacing: 5px; 
+}
+
+#p3 {
+    animation: grow-animation 4s linear;
+    animation-iteration-count: 5;
+    animation-delay: 0.01s;
+}
+
+@keyframes grow-animation {
+  0% { transform: scale(1); }
+  50% {transform: scale(1.3); }
+  100% {transform: scale(1); }
+}
+
+//dodati animaciju na tekst odnosno p tag a ne na div
